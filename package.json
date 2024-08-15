@@ -1,0 +1,24 @@
+{
+  "name": "geo-from-ip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir=build",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "vercel": "^35.2.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^16.4.5",
+    "leaflet": "^1.9.4"
+  }
+}
